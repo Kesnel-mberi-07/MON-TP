@@ -1,0 +1,125 @@
+.contact-intro {
+  background-color: #cebaba;
+  padding: 60px 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-intro h1 {
+  font-size: 32px;
+  color: #b51f1f;
+  margin-bottom: 20px;
+}
+
+.contact-intro p {
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.8;
+}
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+.form-container h1 {
+    margin-bottom: 10px;
+    color: #b51f1f;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+    border-color: #b51f1f;
+    outline: none;
+}
+
+.signup-form button {
+    width: 100%;
+    background-color: #b51f1f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #8e1616;
+}
+
+/* Animation douce */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #b51f1f;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s
+}
+.message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f9e0;
+    color: #2a7b2a;
+    border: 1px solid #88cc88;
+    border-radius: 6px;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }

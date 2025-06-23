@@ -1,0 +1,260 @@
+/* RÉINITIALISATION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* TOP BAR */
+.top-bar {
+  background-color: #b51f1f;
+  color: #fff;
+  padding: 10px 30px;
+  text-align: right;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #b51f1f;
+}
+
+/* FILTRES DE BLOG */
+.blog-filters {
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.blog-filters h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #b51f1f;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background-color: #f2f2f2;
+  border: 1px solid #b51f1f;
+  color: #b51f1f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #b51f1f;
+  color: white;
+}
+
+/* ARTICLE */
+.article {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.article h1 {
+  font-size: 30px;
+  color: #b51f1f;
+  margin-bottom: 10px;
+}
+
+.article .meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.article-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.article p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #b51f1f;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #b51f1f;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #8e1515;
+}
+
+/* COMMENTAIRES */
+.comments-section {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comments-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b51f1f;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.comment-form button {
+  background-color: #b51f1f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #8e1515;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .hero-content h1,
+  .article h1 {
+    font-size: 20px;
+  }
+
+  .hero-content p,
+  .article p {
+    font-size: 14px;
+  }
+
+  .hero-content .btn,
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .about h2,
+  .blog-filters h2,
+  .comments-section h2 {
+    font-size: 22px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

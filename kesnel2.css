@@ -1,0 +1,271 @@
+/* RESET + GÉNÉRAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* TOP BAR */
+.top-bar {
+    background-color: #b51f1f;
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #b51f1f;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 20, 20, 0.6);
+    color: white;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 1.2s ease-in;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+.hero-content .btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b51f1f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #9c1a1a;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #b51f1f;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #b51f1f;
+    margin: 10px auto;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.about-content .text {
+    flex: 1;
+}
+
+.about-content .text h3 {
+    color: #b51f1f;
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 60px 30px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeIn 1.8s ease-in;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #b51f1f;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b51f1f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(181, 31, 31, 0.3);
+}
+
+.contact-form button {
+    background-color: #b51f1f;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #9c1a1a;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-content .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .about h2 {
+        font-size: 22px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
