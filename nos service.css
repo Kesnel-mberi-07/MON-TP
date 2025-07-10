@@ -19,13 +19,13 @@
 /* -------- SECTION SEO -------- */
 .seo-paragraph {
     background-color: #fff4f4;
-    padding: 40px 30px;
+    padding: 20px 30px;
     font-size: 16px;
     color: #444;
     line-height: 1.6;
     text-align: justify;
     max-width: 1000px;
-    margin: auto;
+    margin: 20px;
 }
 
 .seo-paragraph strong {
