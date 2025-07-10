@@ -1,3 +1,4 @@
+/* -------- HERO PRINCIPAL -------- */
 .services-hero {
     background: linear-gradient(to right, #b51f1f, #6a0d0d);
     color: white;
@@ -15,6 +16,23 @@
     font-size: 18px;
 }
 
+/* -------- SECTION SEO -------- */
+.seo-paragraph {
+    background-color: #fff4f4;
+    padding: 40px 30px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.seo-paragraph strong {
+    color: #b51f1f;
+}
+
+/* -------- SECTION SERVICES -------- */
 .services-section {
     display: flex;
     flex-wrap: wrap;
@@ -23,44 +41,7 @@
     padding: 50px 30px;
     background-color: #f9f9f9;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-  background: white;
-  border-bottom: 1px solid #ddd;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: 18px;
-}
 
-.logo img {
-  width: 40px;
-  margin-right: 10px;
-}
-.back-btn {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #b51f1f;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  }
-footer {
-  background-color: black;
-  opacity: 0.8;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 50px;
-}
 .service {
     background: white;
     border-radius: 10px;
@@ -80,7 +61,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.service h2 {
+.service h2, .service h3 {
     color: #b51f1f;
     margin-bottom: 10px;
 }
@@ -90,7 +71,83 @@ footer {
     color: #555;
 }
 
-/* Animations */
+/* -------- CTA -------- */
+.cta {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #fff0f0;
+}
+
+.cta h2 {
+    color: #b51f1f;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.cta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cta a.btn {
+    background-color: #b51f1f;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta a.btn:hover {
+    background-color: #8e1b1b;
+}
+
+/* -------- HEADER & FOOTER -------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #b51f1f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* -------- ANIMATIONS -------- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -101,7 +158,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/* -------- RESPONSIVE -------- */
 @media (max-width: 768px) {
     .services-section {
         flex-direction: column;
@@ -110,5 +167,13 @@ footer {
 
     .services-hero h1 {
         font-size: 28px;
+    }
+
+    .seo-paragraph {
+        padding: 30px 20px;
+    }
+
+    .cta h2 {
+        font-size: 24px;
     }
 }
